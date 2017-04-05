@@ -13,7 +13,11 @@ install:
 
 deb-pkg:
 	checkinstall --install=no \
+		--deldoc=yes
+		--deldesc=yes
+		--delspec=yes
 		--default \
 		--pkgname="sdl2-vapi" \
-		--pkgversion="2.0"
+		--pkgversion="2.0" \
+		--pakdir=../
 
