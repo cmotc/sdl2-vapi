@@ -14,6 +14,7 @@ install:
 clean:
 	rm *tgz \
 		*deb
+
 deb-pkg:
 	checkinstall --install=no \
 		--deldoc=yes \
