@@ -13,7 +13,7 @@ install:
 
 clean:
 	rm *tgz \
-		*deb
+		../sdl2-vapi_2.0-1_amd64.deb
 
 deb-pkg:
 	checkinstall --install=no \
