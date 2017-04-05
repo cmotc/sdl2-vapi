@@ -11,11 +11,14 @@ install:
 		cp ./*.deps "/usr/share/vala/vapi-0.26/" -R --force ; \
 		cp ./*.deps "/usr/share/vala/vapi-0.34/" -R --force
 
+clean:
+	rm *tgz \
+		*deb
 deb-pkg:
 	checkinstall --install=no \
-		--deldoc=yes
-		--deldesc=yes
-		--delspec=yes
+		--deldoc=yes \
+		--deldesc=yes \
+		--delspec=yes \
 		--default \
 		--pkgname="sdl2-vapi" \
 		--pkgversion="2.0" \
