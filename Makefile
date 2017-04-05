@@ -12,8 +12,7 @@ install:
 		cp ./*.deps "/usr/share/vala/vapi-0.34/" -R --force
 
 clean:
-	rm *tgz \
-		../sdl2-vapi_2.0-1_amd64.deb
+	rm -f *tgz
 
 deb-pkg:
 	checkinstall --install=no \
