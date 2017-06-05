@@ -22,5 +22,6 @@ deb-pkg:
 		--default \
 		--pkgname="sdl2-vapi" \
 		--pkgversion="2.0" \
-		--pakdir=../
+		--pakdir=.. \
+		--backup=no
 
