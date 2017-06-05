@@ -3,13 +3,15 @@ dummy:
 	echo "run make install to install to /usr/share/vala/vapi"
 
 install:
-	mkdir -p "/usr/share/vala/vapi/" "/usr/share/vala/vapi-0.26/" "/usr/share/vala/vapi-0.34/"
+	mkdir -p "/usr/share/vala/vapi/" "/usr/share/vala/vapi-0.26/" "/usr/share/vala/vapi-0.34/" "/usr/share/vala/vapi-0.36/"
 	cp ./*.vapi "/usr/share/vala/vapi/" -R --force ; \
 		cp ./*.vapi "/usr/share/vala/vapi-0.26/" -R --force ; \
-		cp ./*.vapi "/usr/share/vala/vapi-0.34/" -R --force
+		cp ./*.vapi "/usr/share/vala/vapi-0.34/" -R --force ; \
+		cp ./*.vapi "/usr/share/vala/vapi-0.36/" -R --force
 	cp ./*.deps "/usr/share/vala/vapi/" -R --force ; \
 		cp ./*.deps "/usr/share/vala/vapi-0.26/" -R --force ; \
-		cp ./*.deps "/usr/share/vala/vapi-0.34/" -R --force
+		cp ./*.deps "/usr/share/vala/vapi-0.34/" -R --force ; \
+		cp ./*.deps "/usr/share/vala/vapi-0.36/" -R --force
 
 clean:
 	rm -f *tgz
